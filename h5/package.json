@@ -1,0 +1,28 @@
+{
+  "name": "project_power_by_kissy_cake",
+  "generator_version": "0.3.5",
+  "description": "an kissy cake app",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": "",
+  "keywords": [
+    "kissy-cake"
+  ],
+  "author": "yujiang <zhihao.gzh@alibaba-inc.com>",
+  "license": "BSD",
+  "devDependencies": {
+      "grunt": "~0.4.1",
+      "grunt-contrib-copy": "*",
+      "grunt-contrib-uglify": "~0.2.0",
+      "grunt-css-combo": ">=0.2.2",
+      "grunt-contrib-cssmin": "~0.6.1",
+      "grunt-contrib-watch": "~0.3.1",
+      "grunt-kmc": "~0.1.0",
+      "grunt-contrib-connect": "~0.3.0",
+      "grunt-kissy-template": "~0.1.0",
+      "matchdep": "~0.1.2",
+      "abc-gruntfile-helper": "0.0.9"
+  }
+}

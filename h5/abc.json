@@ -1,0 +1,18 @@
+{
+  "name": "qiangpaih5",
+  "desc": "description of your app",
+  "type": "kissy-cake",
+  "type-url": "http://abc.f2e.taobao.net/spec/kissy-cake",
+  "author": {
+    "name": "yujiang",
+    "email": "zhihao.gzh@alibaba-inc.com"
+  },
+  "_kissy_cake": {
+    "groups": {},
+    "styleEngine": "css",
+    "defaults": {
+      "pages": [],
+      "widgets": []
+    }
+  }
+}

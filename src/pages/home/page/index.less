@@ -1,0 +1,66 @@
+/*
+combined files : 
+
+*/
+
+//import css
+@import "../../../common/global.less";
+@import "./module-today.less";
+//@import "./module-guide.less";
+
+/* part of qiang pai */
+
+/* banner */
+#qp-intro {
+    background-color: #F3F3F1;
+    width: 100%;
+    height: 150px;
+}
+
+#intro-box {
+    width: 1190px;
+    margin: 0 auto;
+    height: 150px;
+    overflow: hidden;
+}
+
+#intro-box img {
+    width: 1190px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 0;
+    display: block;
+}
+
+//Response Style 
+.w1190 {
+    #intro-box {
+        width: 1190px;
+    }
+}
+.w990 {
+    #intro-box {
+        width: 990px;
+        img {
+            margin-left: -100px;
+        }
+    }
+}
+@media screen and (min-width: 1261px) {
+    .body {
+        #intro-box {
+            width: 1190px;
+        }
+    }
+}
+@media screen and (max-width: 1260px) {
+    .body {
+        #intro-box {
+            width: 990px;
+            img {
+                margin-left: -100px;
+            }
+        }
+    }
+}

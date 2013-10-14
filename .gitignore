@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+.sass-cache
+app/components
+.idea
+.iml
+/design
+/images
+/h5/node_modules
+/back

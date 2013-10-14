@@ -1,0 +1,391 @@
+
+/* style for merchant apply */
+
+@import "../../../common/global.less";
+
+#qp-merchant-apply {
+	margin-bottom: 100px;
+
+	.apply-banner-wrap {
+		background-color: #f8f8f8;
+		display: block;	
+		position: relative;
+		margin-top: 10px;
+		width: 100%;
+		height: 190px;
+	}
+	.apply-banner {
+		overflow: hidden;
+
+		.banner-img {
+			background-color: #f2eae4;
+			display: block;	
+			position: relative;
+			float: left;
+			width: 800px;
+			height: 190px;
+
+			.banner-img-a {
+				.bg-loading();
+				display: block;	
+				width: 800px;
+				height: 190px;
+				img {
+					display: block;	
+					width: 800px;
+					height: 190px;
+				}
+			}
+
+		}//end of banner-img
+		.banner-active {
+			border-top: 1px solid #e7e7e7;
+			border-bottom: 1px solid #e7e7e7;
+			border-right: 1px solid #e7e7e7;
+			display: block;
+			float: left;
+			overflow: hidden;
+			padding-left: 20px;
+			position: relative;
+			width: 369px;
+			height: 188px;
+			.banner-triangle {
+				display: block;
+				border-width: 10px;
+				border-style: dashed dashed dashed solid;
+				border-color: transparent transparent transparent #f2eae4;
+				font-size: 0;
+				overflow: hidden;
+				position: absolute;
+				top: 20px;
+				left: 0px;
+				width: 0;
+				height: 0;
+				line-height: 0;
+			}
+			.btn-apply {
+				border: 1px solid #a82424;
+				background-color: #c10000;
+				color: #ffffff;
+				display: block;
+				font-size: 22px;
+				font-weight: bold;
+				font-family: "Microsoft YaHei";
+				position: absolute;
+				top: 35px;
+				left: 50%;
+				margin-left: -107px;
+				width: 215px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				text-decoration: none;
+			}
+			.banner-info {
+				display: block;
+				border-top: 1px dashed #dddddd;
+				padding: 15px 0;
+				position: absolute;
+				bottom: 0;
+				right: 20px;
+				height: 45px;
+				width: 350px;
+				.item {
+					color: #666666;
+					display: block;
+					font-size: 12px;
+					.title {
+						display: inline;
+						font-weight: bold;
+					}	
+					.content {
+						display: inline;
+					}
+				}	
+			}//end of banner-info
+		}//end of banner-active
+	}//end of apply-banner	
+
+	.apply-info {
+		border-top: 2px solid #dddddd;
+		margin-top: 18px;
+
+		.apply-info-list {
+			position: relative;
+			width: 100%;
+			border-left: 1px solid #eeeeee;
+
+			.list-row-first {
+				background-color: #f7f7f7;	
+			}
+			.list-row {
+				.list-col {
+					border-right: 1px solid #eeeeee;
+					border-bottom: 1px solid #eeeeee;
+					overflow-y: visible;
+					padding: 30px 0;
+					height: 148px;
+					width: 50%;
+					vertical-align: center;
+					tr {
+						td {
+							.title {
+								display: block;
+								padding-top: 40px;
+								margin-left: 50px;
+								text-align: center;
+								.title-flag {
+									background-image: url('http://gtms03.alicdn.com/tps/i3/T1XGKiFclgXXaqQZrM-160-160.png');
+									background-repeat: no-repeat;
+									display: block;
+									width: 80px;
+									height: 80px;
+								}	
+								p {
+									display: block;
+									font-size: 17px;
+									font-family: "Microsoft YaHei";
+									line-height: 40px;
+								}
+								.flag-a {
+									background-position: 0 0;
+								}
+								.flag-b {
+									background-position: -80px 0;
+								}
+								.flag-c {
+									background-position: 0 -80px;
+								}
+								.flag-d {
+									background-position: -80px -80px;
+								}
+							}//end title
+							.content {
+								margin-left: 55px;
+								margin-right: 55px;
+								.content-item {
+									display: block;											
+									position: relative;
+									p {
+										color: #666666;
+										display: inline;
+										font-size: 12px;
+										height: 20px;
+										line-height: 20px;
+									}
+									.t {
+										display: block;
+										border-width: 3px;
+										border-style: dashed dashed dashed solid;
+										border-color: transparent transparent transparent #d2d2d2; 
+										font-size: 0;
+										overflow: hidden;
+										position: absolute;
+										top: 10px;
+										left: -10px;
+										margin-top: -3px;
+										width: 0;
+										height: 0;	
+										line-height: 0;
+									}
+								}
+							}//end content
+						}	
+					}
+					
+				}//end of list-col
+			}//end of list-row
+		}//end of apply-info-list
+	}//end of apply-info
+	
+
+	.apply-flow {
+		margin-top: 10px;
+		.title {
+			border-bottom: 2px solid #c10000;
+			display: block;	
+			color: #c10000;
+			font-size: 15px;
+			font-family: "Microsoft YaHei";
+			line-height: 30px;
+			height: 30px;
+		}//end title
+		.flow-guide {
+			margin-top: 100px;
+			.guide-list {
+				.clearfix();
+				border-left: 1px solid #dddddd;
+				width: 1055px;
+				margin: 0 auto;
+
+				.guide-list-item {
+					border-top: 1px solid #dddddd;
+					border-bottom: 1px solid #dddddd;
+					background-color: #f2f2f2;
+					display: block;
+					float: left;
+					padding: 10px 30px 0 30px;
+					position: relative;
+					width: 113px;
+					height: 81px;
+					.guide-step {
+						display: block;
+						font-size: 13px;	
+						font-weight: bold;
+						font-family: "Microsoft YaHei";
+						line-height: 25px;
+						height: 25px;
+					}	
+					.content {
+						color: #666666;
+						font-size: 12px;
+						line-height: 20px;
+					}
+					.next-flag {
+						background: url("http://gtms04.alicdn.com/tps/i4/T19QawFmxdXXcCnArj-60-93.png") no-repeat 0 0;
+						display: block;
+						position: absolute;
+						top: -1px;
+						right: 0px;
+						width: 32px;
+						height: 93px;
+					}
+					.info-top, .info-bottom {
+						border: 1px dashed #dddddd;
+						display: block;
+						padding: 10px;
+						position: absolute;
+						left: -20px;
+						bottom: 115px;
+						text-align: center;
+						line-height: 20px;
+						width: 150px;
+						.line {
+							background-color: #dddddd;
+							display: block;
+							position: absolute;
+							bottom: -25px;
+							left: 50%;
+							width: 1px;
+							height: 25px;
+						}
+					}
+					.info-bottom {
+						top: 115px;
+						bottom: auto;
+						.line {
+							top: -25px;
+							bottom: auto;
+						}
+					}
+				}	
+				.guide-list-last {
+					.next-flag {
+						background-position: -35px 0;
+						width: 25px;
+					}	
+				}		
+			}	
+		}
+
+	}//end of apply-flow
+
+}
+
+//Response Style 
+.w1190 {
+	
+}
+.w990 {
+		#qp-merchant-apply {
+			.apply-banner {
+				.banner-img {
+					overflow: hidden;
+					width: 600px;
+					.banner-img-a {
+						position: relative;
+						left: -100px;
+					}
+				}
+			}//apply-banner				
+			.apply-flow {
+				.flow-guide {
+					.guide-list {
+						width: 920px;
+						.guide-list-item {
+							padding-left: 20px;
+							width: 100px;
+						}
+						.info-top, .info-bottom {
+							width: 140px;
+						}
+					}
+				}
+			}//apply-flow
+		}
+}
+@media screen and (min-width: 1261px) {
+	.body {
+		#qp-merchant-apply {
+			.apply-banner {
+				.banner-img {
+					overflow: visible;
+					width: 800px;
+					.banner-img-a {
+						position: relative;
+						left: 0px;
+					}
+				}
+			}//apply-banner				
+			.apply-flow {
+				.flow-guide {
+					.guide-list {
+						width: 1055px;
+						.guide-list-item {
+							padding-left: 30px;
+							width: 113px;
+						}
+						.info-top, .info-bottom {
+							width: 150px;
+						}
+					}
+				}
+			}//apply-flow
+		}
+
+	}
+}
+@media screen and (max-width: 1260px) {
+	.body {
+		#qp-merchant-apply {
+			.apply-banner {
+				.banner-img {
+					overflow: hidden;
+					width: 600px;
+					.banner-img-a {
+						position: relative;
+						left: -100px;
+					}
+				}
+			}//apply-banner				
+			.apply-flow {
+				.flow-guide {
+					.guide-list {
+						width: 920px;
+						.guide-list-item {
+							padding-left: 20px;
+							width: 100px;
+						}
+						.info-top, .info-bottom {
+							width: 140px;
+						}
+					}
+				}
+			}//apply-flow
+		}
+	}
+}
+
+
+
+

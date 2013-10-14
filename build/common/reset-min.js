@@ -1,0 +1,1 @@
+KISSY.add("common/reset",function(a,b,c){function d(){var a=c.viewportWidth();a>1260?h("body").addClass("w1190"):h("body").addClass("w990")}function e(){}function f(){KISSY.ready(function(){})}function g(){e(),d(),f()}var h=b.all;return{init:g}},{requires:["node","dom","event"]});

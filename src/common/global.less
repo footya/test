@@ -1,0 +1,95 @@
+//global
+
+//loading img
+.bg-loading() {
+    background: url("http://img01.taobaocdn.com/tps/i1/T1cKm3XkRpXXXXXXXX-48-48.gif") no-repeat center center;  
+}
+
+.bg-loading-c(@top) {
+    background: url("http://img01.taobaocdn.com/tps/i1/T1cKm3XkRpXXXXXXXX-48-48.gif") no-repeat center @top;  
+}
+
+//font arial
+.font-yuan() {
+	font-family: 'Verdana', 'arial';	
+}
+.font-yahei() {
+	font-family: "Microsoft YaHei";
+}
+
+//clean
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.clearfix() {
+ 	&:before,
+  	&:after {
+    	content: " ";
+    	display: table;
+  	}
+  	&:after {
+    	clear: both;
+  	}
+  	*zoom: 1;
+}
+
+//triangle
+.triangle() {
+	display: block;
+	border-width: 10px;
+	border-style: dashed dashed dashed solid;
+	border-color: transparent transparent transparent #f2eae4;
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+}
+
+.inline-block() {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.min-height(@height) {
+	*height: @height;
+	*zoom: 1;
+	*overflow: visible;
+	height: auto !important;
+	min-height: @height;
+}
+
+//transition
+.transition() {
+	-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;	
+}
+.transition-c(@time) {
+	-moz-transition: all @time ease;
+    -webkit-transition: all @time ease;
+    -o-transition: all @time ease;
+    -ms-transition: all @time ease;
+    transition: all @time ease;	
+}
+
+//text overflow
+.text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	white-space: nowrap;
+}

@@ -1,0 +1,141 @@
+/*
+combined files : 
+
+*/
+
+#J_Search{float:right;margin-top:20px;width:300px}
+#q{color:#999;font-size:12px}
+.search-panel button.btn-searchshop,.search-panel button.btn-searchshop:hover,.search-panel button.btn-searchshop-hover,.search-panel-focused .search-panel-fields input,.search-list-panel-focused .search-panel-fields input,.search-srp-panel .search-panel-focused .search-panel-fields input,.search-panel button.btn-searchall,.search-panel button.btn-searchall:hover,.search-panel button.btn-searchall-hover,.search-panel button.btn-list,.search-panel button.btn-search,.search-panel button.btn-search:hover,.search-panel button.btn-search-hover,.search-srp-panel button.btn-search,.search-srp-panel button.btn-search:hover,.search-srp-panel button.btn-search-hover,.search-item-panel button.btn-search,.search-item-panel button.btn-search:hover,.search-item-panel button.btn-search-hover{background-image:url("http://img01.taobaocdn.com/tps/i1/T1HM4.FalcXXbMnNTw-919-175.png");background-repeat:no-repeat}
+.search-panel{position:relative;zoom:1}
+.search-panel-fields{height:33px;position:relative;zoom:1;background:#e6e6e6;overflow:hidden}
+.search-panel-fields label{position:absolute;left:15px;top:8px;z-index:1;color:#999;cursor:text}
+.search-panel-fields input{font-size:14px;position:absolute;left:3px;top:3px;height:18px;line-height:18px;padding:4px 0;background:#fff;vertical-align:middle;border:0 none;border-top:1px solid #f5f5f5}
+.search-panel .search-button{position:relative;z-index:1;float:right;background:#fff;_left:-3px}
+.search-panel button{cursor:pointer;border:0;font-size:18px;text-indent:-999em;float:left;width:73px;height:33px}
+.search-status-focus label,.search-status-focus .search-panel-fields s{display:none}
+.search-combobox{margin-left:3px;margin-right:0}
+.search-panel-fields .search-combobox input{left:0;}
+.search-panel-fields input{left:-3px;width:100%;outline:none;padding-right:3px;text-indent:5px;margin-left:6px}
+.search-combobox-input-wrap{position:relative;overflow:hidden}
+.search-panel-fields .search-combobox-input-wrap input{margin-left:0}
+.search-panel-two-buttons .search-panel-fields{margin-right:0}
+.search-panel button.btn-searchshop{background-position:-100px -76px;margin-left:3px}
+.search-panel button.btn-searchshop:hover{background-position:-100px -120px}
+.search-type{position:relative;float:left;border:3px solid #e6e6e6;width:54px;background:#fff}
+.search-type ul{text-indent:10px;line-height:25px;height:27px;overflow:hidden}
+.search-type ul a{display:block;border-top:1px solid #fff;color:#666;margin-bottom:1px}
+.search-type ul a:hover{color:#f60;text-decoration:underline}
+.search-type ul li.selected a{margin-bottom:1px;border-top-color:#f5f5f5}
+.search-type b{position:absolute;right:7px;top:11px;width:0;height:0;border-width:4px 4px;border-style:solid;border-color:#666 transparent transparent;_border-color:#666 #f7f7f7 #f7f7f7 #f7f7f7;font-size:0;line-height:0;-webkit-transition:-webkit-transform .2s ease-in;-moz-transition:-moz-transform .2s ease-in 0;-o-transition:-o-transform .2s ease-in;transition:transform .2s ease-in}
+.search-type .hover b{-moz-transform:rotate(180deg);-moz-transform-origin:50% 30%;-webkit-transform:rotate(180deg);-webkit-transform-origin:50% 30%;-o-transform:rotate(180deg);-o-transform-origin:50% 30%;transform:rotate(180deg);transform-origin:50% 30%;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)}
+.search-list-panel .search-combobox{margin-left:-3px;margin-right:0}
+.search-list-panel .search-panel-fields{margin-left:0;margin-right:0}
+.search-list-panel .search-panel-fields label{left:10px}
+.search-list-panel .search-panel-fields label q{display:none}
+.search-list-panel-hover .search-type,.search-list-panel-focused .search-type{border-color:#e4445c}
+.search-list-panel-hover .search-panel-fields,.search-list-panel-focused .search-panel-fields{background:#e4445c}
+.search-panel-hover .search-panel-fields{background:#f50}
+.search-panel-focused .search-panel-fields input,.search-list-panel-focused .search-panel-fields input{border-top:0;padding-top:5px;background-position:0 -40px;background-color:#fff}
+.search-panel button.btn-searchall{background-position:-260px -76px;margin-left:3px}
+.search-panel button.btn-searchall-hover,.search-panel button.btn-searchall:hover{background-position:-260px -120px}
+.search-panel button.btn-list{background-position:-420px -76px}
+.search-triggers ul{overflow:hidden;zoom:1}
+.search-triggers li{position:relative;zoom:1;float:left}
+.search-triggers li a{float:left;height:23px;line-height:23px;padding:0 12px;color:#333}
+.search-triggers li a:hover{color:#f60 !important;text-decoration:underline}
+.search-triggers li.selected a{background:#ff5700;font-weight:bold;padding:0 15px;color:#fff;border-radius:1px 1px 0 0}
+.search-triggers li.selected a span{color:#fff !important}
+.search-triggers li.selected a:hover span{color:#fff !important}
+.search-triggers li.selected a:hover{color:#fff !important;text-decoration:none}
+.search-triggers .search-fix{display:none}
+.search-triggers li.selected .search-fix{display:block}
+.search-panel button.btn-search{background-position:-180px -76px}
+.search-panel button.btn-search-hover,.search-panel button.btn-search:hover{background-position:-180px -120px}
+.search-panel-focused .search-panel-fields,.search-common-panel{background:#f50}
+.search-sns-panel-field input{top:0}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field{width:322px;float:right;background:#fff;height:27px;margin-top:4px;margin-right:4px}
+.search-sns-panel-field .search-panel-fields{margin-right:0}
+.search-sns-panel-field label{top:5px}
+.search-sns-panel-field button.btn-search{text-indent:0;font-size:12px;color:#666;background:#f5f5f5;height:27px;width:72px;border-left:1px solid #d9d9d9}
+.search-sns-panel-field .search-panel-fields{height:27px}
+.search-sns-panel-field .search-combobox{margin-left:0}
+.search-sns-panel-field .search-combobox-input-wrap{height:27px}
+.search-sns-panel-field .search-combobox-input{top:0;background:#fff}
+.search-sns-panel-field button.btn-search:hover{background:#f5f5f5;color:#333}
+.search-srp-panel-fields{height:37px;margin-right:0}
+.search-srp-panel-fields label{top:10px}
+.search-srp-panel-fields input{height:22px;line-height:22px}
+.search-srp-panel-fields .search-combobox-input-wrap{height:34px}
+.search-srp-panel button.btn-search{width:93px;height:37px;background-position:0 -76px}
+.search-srp-panel button.btn-search-hover,.search-srp-panel button.btn-search:hover{background-position:0 -120px}
+.search-srp-panel .search-panel-focused .search-panel-fields input{background-position:0 0}
+.search-item-panel button.btn-search{background-position:-340px -76px}
+.search-item-panel button.btn-search:hover{background-position:-340px -120px}
+.search-faxian-panel .search-combobox{margin-left:3px}
+.search-combobox-menu-footer .tdg-btn,.search-combobox-menu-footer .jp-btn{background-image:url(http://img01.taobaocdn.com/tps/i1/T1B98CFlpeXXbMnNTw-919-175.png);background-repeat:no-repeat}
+.search-menu{background:#fff;border-color:#bebebe;border-style:solid;border-width:1px;cursor:default;margin:0;outline:0;position:absolute;z-index:99999}
+.search-menuitem{color:#333;list-style:none;margin:0;font-size:12px;line-height:24px;white-space:nowrap;height:26px;left:-9999px;top:-9999px;overflow:hidden}
+.search-menuitem-disabled .search-menuitem-content{color:#ccc !important}
+.search-combobox{font-size:12px}
+.search-combobox-trigger{text-decoration:none;color:#000;float:right;text-align:center;border-left:1px solid #b5b6b5}
+.search-combobox-trigger-inner{float:left;line-height:18px;height:18px;margin:0 4px;vertical-align:middle}
+.search-combobox-input-wrap{vertical-align:middle;position:relative;height:30px}
+.search-combobox-input{font-size:12px;width:100%;vertical-align:middle;background-color:#fff;border:0;color:#000}
+.search-combobox-input{line-height:18px;height:18px;overflow-y:visible;font-size:100%}
+.search-menuitem-disabled{color:#808080}
+.search-menuitem .item-wrapper{height:26px}
+.search-menuitem .item-text{float:left;padding-left:5px}
+.search-menuitem .item-count{float:right;padding-right:5px;color:#999}
+.search-menuitem-highlight,.search-menuitem-hover{background-color:#eee;color:#333}
+.search-combobox-menu-footer{background:#f5f5f5;border-top:1px solid #ccc;padding:5px 10px;zoom:1}
+.search-contentbox .search-menu-key{float:left;text-align:left;padding-left:5px}
+.search-contentbox .search-menu-cate{color:#999;margin-left:8px}
+.search-contentbox .search-menu-extras-cz{padding-left:30px;background-image:url(http://img03.taobaocdn.com/tps/i3/T18K9gXlBzXXXXXXXX-16-36.png);background-position:8px 3px;background-repeat:no-repeat}
+.search-contentbox .search-menuitem-hover .search-menu-extras-cz{background-position:8px -17px}
+.search-contentbox .search-menu-extras-cz .search-menu-key{padding:0 2px}
+.history-box{line-height:20px;overflow:hidden}
+.search-combobox-menu-header .history-box,.most-footer .history-box{color:#a5a5a5;line-height:24px;padding-left:5px}
+.search-menu-history-clean{color:#666;float:right;padding-right:4px}
+.search-menu-history-footer .history-box{height:25px;background-color:#f1f1f1}
+.search-contentbox .search-menu-history-delete{position:absolute;right:0;background:#fff;text-decoration:none;color:#fff;padding-right:5px;padding-left:5px;cursor:pointer;display:none}
+.search-contentbox .search-menu-history-key{float:left;color:#1071a8;padding-left:5px}
+.search-menuitem-hover .search-menu-history-key{color:#1071a8}
+.search-menuitem-hover .search-menu-history-delete{background-color:#eee;color:#666;display:inline}
+.most-footer{position:absolute;width:100%;border-top:1px solid #e4e4e4;background:#fff;padding:0}
+.search-menu-extras-history{zoom:1;position:relative}
+.search-contentbox .search-menu-extras-xp .search-menu-xp-tag,.search-contentbox .search-menu-extras-dp .search-menu-dp-tag{float:right;width:80px;text-align:center;border-left:1px solid #e5e5e5}
+.search-contentbox .search-menu-extras-xp .search-menu-xp-icon,.search-contentbox .search-menu-extras-dp .search-menu-dp-icon{float:left;width:20px;margin-right:5px;height:24px;font-size:0;background:transparent url(http://img04.taobaocdn.com/tps/i4/T1Fg6QXg4bXXaTNmze-40-14.png) no-repeat}
+.search-contentbox .search-menu-extras-xp .search-menu-xp-icon{background-position:5px 5px}
+.search-contentbox .search-menu-extras-dp .search-menu-dp-icon{background-position:-15px 5px}
+.search-contentbox .search-menu-extras-xp,.search-contentbox .search-menu-extras-dp{border-top:1px solid #e5e5e5}
+.search-combobox-menu-footer .jipiao-box{height:24px;overflow:hidden}
+.search-combobox-menu-footer .jipiao-box input{width:60px;color:#333;border:1px solid #a6a6a6;padding:1px;height:18px}
+.search-combobox-menu-footer .jipiao-box .input-date{width:72px}
+.search-combobox-menu-footer .jipiao-box em{font-size:12px;font-weight:400;line-height:18px}
+.search-combobox-menu-footer .jipiao-box h5{background:url(http://img02.taobaocdn.com/tps/i2/T1QQOXXnlqXXXXXXXX-73-15.png) no-repeat;width:73px;height:15px;margin-top:3px}
+.search-combobox-menu-footer .jipiao-box h5 a{display:block;width:73px;height:15px}
+.search-combobox-menu-footer .tdg-box{height:24px;overflow:hid5den}
+.search-combobox-menu-footer h5,.search-combobox-menu-footer em,.search-combobox-menu-footer input{float:left}
+.search-combobox-menu-footer h5,.search-combobox-menu-footer .jp-btn{background:transparent url(http://img04.taobaocdn.com/tps/i4/T1NpJOXiVpXXXXXXXX.png) no-repeat 999em 0;text-indent:-999em}
+.search-combobox-menu-footer h5{float:left;width:49px;height:20px;background-position:0 0;margin:0 11px 0 0}
+.search-combobox-menu-footer em{font:700 14px tahoma;color:#a7a7a7;padding:2px 3px}
+.search-combobox-menu-footer .tdg-btn,.search-combobox-menu-footer .jp-btn{position:absolute;right:10px;width:45px;height:25px;border:0;background-color:transparent;background-position:-500px -76px;cursor:pointer;text-indent:-9999em}
+.search-combobox-menu-footer .tdg-input{border:1px solid #a6a6a6;padding:1px;width:16%;height:18px}
+.cloud-footer{position:absolute;top:0;right:0;width:50%;background:#fff;border-top:0;height:100%;padding:0;display:none;z-index:100}
+.cloud-footer .cloud-box{height:100%}
+.search-menuitem-hover .search-wrap-cloud,.search-menuitem-highlight .search-wrap-cloud,.search-wrap-cloud .item-text{background:transparent url(http://img02.taobaocdn.com/tps/i2/T1RQJHFmRXXXXfwe2X-15-50.png) no-repeat 50%}
+.search-wrap-cloud .item-text{padding-right:20px;background-position:right 0}
+.search-menuitem-hover .search-wrap-cloud .item-text,.search-menuitem-highlight .search-wrap-cloud .item-text{background:0}
+.search-menuitem-hover .search-wrap-cloud,.search-menuitem-highlight .search-wrap-cloud{background-position:48% -27px}
+.cloud-box li{float:left;margin:0 10px 10px 0}
+.cloud-link,.cloud-link span{background-color:#eee;background-image:url(http://img03.taobaocdn.com/tps/i3/T12jBQFeRXXXanMkc8-119-50.gif);background-repeat:no-repeat}
+.cloud-link{display:inline-block;padding-left:12px;color:#3e3e3e}
+.cloud-link span{line-height:25px;padding-right:12px;display:block;background-position:right 0}
+.cloud-link-wrap-hover .cloud-link,.cloud-link:hover{background-position:0 -26px;text-decoration:none}
+.cloud-link-wrap-hover .cloud-link span,.cloud-link:hover span{background-position:right -26px}
+.cloud-link b{color:#f60;font-weight:400}
+.cloud-box .cloud-list{display:none;background:#eee;padding:0 10px;height:100%}
+.cloud-box .cloud-list ul:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.cloud-box .cloud-list ul{*zoom:1}
+.cloud-box .cloud-list h3{padding:4px 4px 7px;margin:0;font-size:12px;color:#666}

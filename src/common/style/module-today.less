@@ -1,0 +1,595 @@
+.goods-round {
+	display: none;
+	.round-title {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		.title {
+			display: block;
+			padding-top: 30px;
+			padding-bottom: 10px;
+			float: left;
+			font-weight: normal;
+			.title-time {
+				background-image: url('http://gtms01.alicdn.com/tps/i1/T1pD1YFmhaXXaBCIHq-85-75.png');
+				background-repeat: no-repeat; 
+				color: #ffffff;
+				display: block;
+				float: left;
+				width: 85px;
+				height: 25px;
+				text-indent: -999px;
+			}
+			.title-status {
+				color: #a2a2a2;
+				display: block;
+				padding-top: 8px;
+				float: left;
+				font-size: 12px;
+				line-height: 15px;
+			}
+			.status-soon {
+				color: #006300;
+			}
+			.status-now {
+				color: #c10000;
+			}
+		}
+		.time-tips {
+			color: #2d2a27;
+			position: absolute;
+			right: 0;
+			bottom: 10px;
+			.hand {
+				vertical-align: baseline;
+				margin-bottom: -3px;
+				.digital {
+					.font-yahei();
+				}
+			}
+		}
+	}
+}
+
+//good lsit style
+.goods-list {
+	.transition();
+	border-left: 1px solid #eeeeee;
+	border-top: 1px solid #eeeeee;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	*zoom: 1;
+
+	.goods-list-item {
+		.transition();
+		background-color: #ffffff;
+		border-bottom: 1px solid #eeeeee;
+		border-right: 1px solid #eeeeee;
+		display: block;
+		float: left;
+		overflow: hidden;
+		padding: 30px 43px;
+		position: relative;
+		width: 210px;
+		height: 350px;
+		.node-watch {
+			.transition-c(0.1s);
+		}
+		.img-wrap {
+			.bg-loading();
+			display: block;
+			width: 210px;
+			height: 210px;
+			img {
+				display: block;
+				width: 210px;
+				height: 210px;
+			}
+		}//end of img-wrap
+		.title {
+			display: block;
+			padding-top: 10px;
+			line-height: 14px;
+			width: 210px;
+			text-align: center;
+
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			a {
+				color: #666666;
+				font-size: 12px;	
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}//end of title
+		.item-info {
+			.countdown-bar {
+				background-color: #e8e8e8;
+				display: block;
+				position: relative;
+				margin-top: 32px;
+				width: 210px;
+				height: 20px;
+				.scroll-box {
+					position: relative;	
+					z-index: 10;
+				}
+				.countdown-bar-tick {
+					display: block;
+					overflow: hidden;
+					position: absolute;
+					bottom: 1px;
+					left: 0px;
+					width: 210px;
+					height: 3px;
+					z-index: 1;
+					li {
+						background-color: #999999;
+						display: block;	
+						float: left;
+						margin-left: 34px;
+						width: 1px;
+						height: 3px;
+					}	
+				}
+				.status-over-tips {
+					display: none;	
+
+					background-color: #f5f5f5;
+					color: #999999;
+					position: absolute;
+					top: 0;
+					left: 0;
+					line-height: 45px;
+					height: 45px;
+					width: 210px;
+					text-align: center;
+					z-index: 20;
+				}
+				.arrow {
+					display: block;
+					border-width: 10px;
+					border-style: solid solid solid dashed;
+					border-color: #ffffff #ffffff #ffffff transparent;
+					font-size: 0;
+					overflow: hidden;
+					position: absolute;
+					top: 0px;
+					right: -10px;
+					width: 0;
+					height: 0;
+					line-height: 0;
+					z-index: 1;
+				}
+				.scroll-bar {
+					display: none;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 20px;
+					z-index: 10;
+					.scroll-flag {
+						.scroll-line {
+							display: block;
+							position: absolute;
+							top: 0;
+							right: -3px;
+							width: 3px;
+							height: 25px;
+							z-index: 20;
+						}
+						.scroll-tips {
+							display: block;
+							position: absolute;
+							top: 0px;
+							height: 20px;
+							line-height: 20px;
+							width: 100px;
+
+							.scroll-time {
+							}
+							.scroll-discount {
+								display: none;
+							}
+							.scroll-soon {
+								display: none;
+							}
+						}
+						.state-scroll-tips-left {
+							color: #333333;
+							right: -105px;
+						}
+						.state-scroll-tips-right {
+							color: #e8bebe;
+							right: 5px;
+							text-align: right;
+						}
+					}	
+				}//end of scroll-bar
+				.left-flag, .right-flag {
+					color: #999999;
+					display: block;
+					font-size: 12px;
+					position: absolute;
+					width: 40px;
+					height: 20px;
+					line-height: 20px;
+					z-index: 10;
+				}
+				.left-flag { 
+					left: 0px;
+					top: -22px;
+					text-align: left;
+				}
+				.right-flag {
+					right: 0px;
+					top: -22px;
+					text-align: right;
+				}
+				.scroll-price {
+					display: block;
+					position: absolute;
+					top: 30px;
+					left: 0px;
+					height: 15px;
+					line-height: 15px;
+					.scroll-discount {
+						em {
+							padding-right: 2px;
+							font-size: 15px;
+							font-weight: bold;
+						}	
+					}	
+					.scroll-c-price {
+						.font-yuan();
+					}
+				}//end of scroll-price
+			}//end of countdown-bar
+
+			.operate-bar {
+				.clearfix();
+				border-top: 1px dotted #e1e1e1;
+				display: block;
+				position: relative;
+				padding-top: 20px;
+				margin-top: 35px;
+				height: 12px;
+				line-height: 12px;
+				width: 210px;
+				.origin-price {
+					display: none;
+
+					.font-yuan();
+					color: #999999;
+					float: left;
+					text-decoration: line-through;
+				}
+				.limite-num {
+					display: none;
+
+					border-left: 1px solid #d7d7d7;
+					color: #999999;
+					margin-left: 8px; 
+					padding-left: 8px;
+					float: left;
+					em {
+						.font-yuan();
+						color: #0f6b0f;
+						font-weight: bold;
+					}
+				}
+				.store-num {
+					display: none;
+
+					border-left: 1px solid #d7d7d7;
+					color: #999999;
+					margin-left: 8px; 
+					padding-left: 8px;
+					float: left;
+					em {
+						.font-yuan();
+						color: #c10000;
+						font-weight: bold;
+					}
+				}
+				.status-flag-soon {
+					display: none;
+
+					color: #0f6b0f;
+					font-weight: bold;
+					float: right;
+				}
+				.tips-later {
+					display: none;
+
+					background-color: #fff8ed;
+					border: 1px solid #fee8c4;
+					color: #999999;
+					padding: 0 5px;
+					position: absolute;
+					top: 8px;
+					left: 0;
+					line-height: 20px;
+					.tips-arrow {
+						background: url("http://gtms03.alicdn.com/tps/i3/T1_yW8FedcXXabCf_b-9-13.png") no-repeat 0 0;
+						display: block;
+						position: absolute;
+						top: 12px;
+						right: -7px;
+						width: 9px;
+						height: 13px;
+					}
+				}
+				.status-flag-later {
+					display: none;
+
+					color: #0f6b0f;
+					font-weight: bold;
+					float: right;
+				}
+				.btn-now-buy {
+					display: none;
+
+					background-color: #cc0505; 
+					border: 1px solid #c10000;
+					color: #ffffff;
+					position: absolute;
+					top: 10px;
+					right: 0;
+					width: 63px;
+					height: 28px;
+					line-height: 28px;
+					text-align: center;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				.btn-privilege-buy {
+					display: none;
+
+					background-color: #f4f4f4; 
+					border: 1px solid #cecece;
+					color: #666666;
+					position: absolute;
+					top: 10px;
+					right: 0;
+					width: 63px;
+					height: 28px;
+					line-height: 28px;
+					text-align: center;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				.btn-privilege-buy-red {
+					background-color: #cc0505;
+					border: 1px solid #c10000;	
+					color: #ffffff;
+				}
+				.btn-privilege-buy-gray {
+					background-color: #f4f4f4;	
+					border: 1px solid #cecece;
+					color: #666666;
+				}
+				.current-price {
+					display: none;
+
+					.font-yuan();
+					color: #c10000;
+					font-size: 15px;
+					font-weight: bold;
+					float: left;
+					padding-right: 5px;
+					margin-top: -1px;
+					em {
+						font-size: 12px;
+						font-weight: normal;
+					}
+				}
+			}//end of operate bar
+		}//end of item-info
+		//status 
+		.state-soon {
+			.countdown-bar {
+				.scroll-bar {
+					background-color: #0f6b0f;
+					display: block;
+					.scroll-flag {
+						.scroll-line {
+							background-color: #0f6b0f;
+						}
+						.scroll-tips {
+							display: none;
+							.scroll-discount {
+
+							}
+							.scroll-soon {
+
+							}
+						}
+					}
+				}
+				.scroll-price {
+					color: #0f6b0f	
+				}
+			}
+			.operate-bar {
+				.origin-price {
+					display: inline;
+				}
+				.status-flag-soon {
+					display: inline;
+				}
+				.limite-num {
+					display: block;
+				}
+			}
+		}//end of .soon
+		.state-soon-now {
+			.countdown-bar {
+				.scroll-bar {
+					background-color: #0f6b0f;
+					display: block;
+					.scroll-flag {
+						.scroll-line {
+							background-color: #0f6b0f;
+						}
+						.scroll-tips {
+							display: block;
+							.scroll-discount {
+
+							}
+							.scroll-soon {
+								display: inline;
+							}
+						}
+					}
+				}
+				.scroll-price {
+					color: #0f6b0f	
+				}
+			}
+			.operate-bar {
+				.origin-price {
+					display: inline;
+				}
+				.status-flag-soon {
+					display: inline;
+				}
+				.limite-num {
+					display: block;
+				}
+			}
+		}//end of .soon-now
+		.state-now {
+			.countdown-bar {
+				.scroll-bar {
+					background-color: #c10000;
+					display: block;
+					.scroll-flag {
+						.scroll-line {
+							background-color: #ad0000;
+						}
+						.scroll-tips {
+							.scroll-time {
+							}
+							.scroll-discount {
+								display: inline;
+							}
+							.scroll-soon {
+								
+							}
+						}
+					}
+				}
+				.scroll-price {
+					color: #c10000;	
+				}
+			}
+			.operate-bar {
+				.origin-price {
+					display: inline;
+				}
+				.store-num {
+					display: block;
+				}
+				.btn-now-buy {
+					display: block;
+				}
+			}
+		}//end of .now
+		.state-later {
+			.countdown-bar {
+				.scroll-bar {
+					background-color: #999999;
+					display: block;
+					.scroll-flag {
+						.scroll-line {
+							background-color: #8a8a8a;
+						}
+						.scroll-tips {
+							.scroll-time {
+							}
+							.scroll-discount {
+								display: inline;
+							}
+							.scroll-soon {
+								
+							}
+						}
+						.state-scroll-tips-right {
+							color: #dadada;
+							right: 5px;
+							text-align: right;
+						}
+					}
+				}
+				.scroll-price {
+					color: #999999;	
+				}
+			}
+			.operate-bar {
+				.tips-later {
+					display: block;
+				}
+				.status-flag-later {
+					display: inline;
+				}
+			}
+		}//end of .later
+		.state-over {
+			.countdown-bar {
+				.status-over-tips {
+					display: block;
+				}
+				.scroll-box {
+					display: none;
+				}
+			}
+			.operate-bar {
+				.btn-privilege-buy {
+					display: block;
+				}			
+				.current-price {
+					display: block;
+				}
+				.origin-price {
+					display: inline;
+				}
+			}
+		}//end of .over
+	}//end of .goods-list-item
+}//end of .goods-list
+
+//Response Style 
+.w1190 {
+	.goods-list .goods-list-item {
+		padding: 30px 43px;
+	}
+}
+.w990 {
+	.goods-list .goods-list-item {
+		padding: 30px 18px;
+	}
+}
+@media screen and (min-width: 1261px) {
+	.body {
+		.goods-list .goods-list-item {
+			padding: 30px 43px;
+		}
+	}
+}
+@media screen and (max-width: 1260px) {
+	.body {
+		.goods-list .goods-list-item {
+			padding: 30px 18px;
+		}
+	}
+}

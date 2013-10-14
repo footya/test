@@ -1,0 +1,1 @@
+KISSY.use("node, dom, common/reset",function(a,b,c,d){d.init(),KISSY.ready(function(){b.all})});

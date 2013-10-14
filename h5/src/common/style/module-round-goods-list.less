@@ -1,0 +1,423 @@
+.round-goods-list {
+	.clearfix();
+	text-align: center;
+
+	.node-watch {
+		.transition();
+	}	
+	.round-goods-item {
+		display: none;
+
+		margin: 0 9px 18px 9px;
+		width: 141px;
+		height: 220px;
+		.title {
+			margin-bottom: 7px;
+			overflow: hidden;
+			line-height: 16px;
+			text-overflow: ellipsis;
+			text-align: center;
+			white-space: nowrap;
+			a {
+				font-size: 14px;
+				font-weight: bold;
+			}
+		}//end of title
+		.img-box {
+			border: 1px solid #eeeeee;
+			position: relative;
+			.img-link {
+				.bg-loading();
+				display: block;
+				width: 139px;
+				height: 139px;
+				img {
+					width: 139px;
+				}
+			}
+			.countdown-text {
+				display: none;
+
+				background: rgba(219, 219, 219, 0.8);
+				color: #666666;
+				font-size: 12px;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				width: 139px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				.txt-soon {
+					display: none;
+				}
+			}//end of countdown-text
+			.scroll-bar {
+				display: none;
+
+				background-color: #e8e8e8;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px;
+				.scroll-flag {
+					display: block;
+					height: 2px;
+					width: 1px;
+				}
+			}//end of scroll-bar
+		}//end of img-box
+		.meta {
+			.clearfix();
+			border-bottom: 1px dotted #e1e1e1;
+			position: relative;
+			height: 30px;
+			line-height: 30px;
+			.item-discount {
+				display: none;
+
+				.font-yuan();
+				float: left;
+				font-size: 13px;
+			}
+			.item-discount-soon {
+				display: none;
+
+				float: left;
+				font-size: 12px;
+			}
+			.item-currentprice {
+				display: none;
+
+				.font-yuan();
+				float: left;
+				font-size: 13px;
+				padding-left: 5px;
+			}
+			.btn-pai {
+				display: none;
+
+				border: 1px solid #ac2525;
+				background-color: #cc0505;
+				color: #ffffff;
+				font-size: 12px;
+				position: absolute;
+				top: 5px;
+				right: 0;
+				width: 43px;
+				height: 18px;
+				line-height: 17px;
+				text-align: center;
+			}
+			.btn-buy {
+				display: none;
+
+				border: 1px solid #ac2525;
+				background-color: #cc0505;
+				color: #ffffff;
+				font-size: 12px;
+				position: absolute;
+				top: 5px;
+				right: 0;
+				width: 50px;
+				height: 18px;
+				line-height: 17px;
+				text-align: center;
+
+			}
+			.item-text-later {
+				display: none;
+
+				color: #0f6b0f;
+				font-size: 13px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}//end of meta
+		.info {
+			.clearfix();
+			position: relative;
+			margin-top: 5px;
+			line-height: 20px;
+			.item-num {
+				color: #a0a0a0;
+				position: relative;
+				padding-left: 10px;
+				font-size: 12px;
+				float: right;
+				i {
+					color: #666666;
+				}
+				.l-line {
+					background-color: #a0a0a0;
+					display: block;
+					position: absolute;
+					top: 5px;
+					left: 0;
+					width: 1px;
+					height: 12px;
+				}
+			}
+			.item-oprice {
+				display: none;
+
+				color: #a0a0a0;
+				font-size: 12px;
+				float: left;
+			}
+			.item-remain-num {
+				display: none;
+			}
+			.item-pai-num {
+				display: none;
+			}
+			.item-stock-num {
+				display: none;
+			}
+			.item-pai-over {
+				display: none;
+
+				color: #999999;
+				float: left;
+				font-size: 12px;
+				text-align: left;
+			}
+		}//end of .info
+	}//end of .round-goods-item
+
+	//status change style
+	.state-soon {
+		.meta {
+			.item-discount {
+
+			}
+			.item-discount-soon {
+				display: block;
+			}
+			.item-currentprice {
+				display: block;
+				color: #0f6b0f;
+			}
+			.btn-pai {
+
+			}
+			.btn-buy {
+
+			}
+			.item-text-later {
+
+			}
+		}//end of meta
+		.info {
+			.item-oprice {
+				display: block;
+			}
+			.item-remain-num {
+
+			}
+			.item-pai-num {
+
+			}
+			.item-stock-num {
+				display: block;
+			}
+			.item-pai-over {
+
+			}
+		}//end of info
+	}//end of status-soon
+	.state-soon-now {
+		.img-box {
+			.countdown-text {
+				display: block;
+				.txt-zhe {
+					display: none;
+				}
+				.txt-soon {
+					display: inline;
+				}
+			}
+			.scroll-bar {
+				display: block;
+				.scroll-flag {
+					background-color: #0f6b0f;
+				}
+			}//end of scroll-bar
+		}
+		.meta {
+			.item-discount {
+
+			}
+			.item-discount-soon {
+				display: block;
+			}
+			.item-currentprice {
+				display: block;
+				color: #0f6b0f;
+			}
+			.btn-pai {
+
+			}
+			.btn-buy {
+
+			}
+			.item-text-later {
+
+			}
+		}//end of meta
+		.info {
+			.item-oprice {
+				display: block;
+			}
+			.item-remain-num {
+
+			}
+			.item-pai-num {
+
+			}
+			.item-stock-num {
+				display: block;
+			}
+			.item-pai-over {
+
+			}
+		}//end of info
+	}//end of status-soon-now
+	.state-now {
+		.img-box {
+			.countdown-text {
+				display: block;
+			}
+			.scroll-bar {
+				display: block;
+				.scroll-flag {
+					background-color: #c10000;
+				}
+			}//end of scroll-bar
+		}
+		.meta {
+			.item-discount {
+				display: block;
+			}
+			.item-discount-soon {
+
+			}
+			.item-currentprice {
+				display: block;
+				color: #c10000;
+			}
+			.btn-pai {
+				display: block;
+			}
+			.btn-buy {
+
+			}
+			.item-text-later {
+
+			}
+		}//end of meta
+		.info {
+			.item-oprice {
+				display: block;
+			}
+			.item-remain-num {
+				display: block;
+			}
+			.item-pai-num {
+
+			}
+			.item-stock-num {
+
+			}
+			.item-pai-over {
+
+			}
+		}//end of info
+	}//end of status-now
+	.state-later {
+		.img-box {
+			.countdown-text {
+			}
+			.scroll-bar {
+			}//end of scroll-bar
+		}
+		.meta {
+			.item-discount {
+				display: block;
+				color: #666666;
+			}
+			.item-discount-soon {
+
+			}
+			.item-currentprice {
+				display: block;
+				color: #666666;
+			}
+			.btn-pai {
+
+			}
+			.btn-buy {
+
+			}
+			.item-text-later {
+				display: block;
+			}
+		}//end of meta
+		.info {
+			.item-oprice {
+			}
+			.item-remain-num {
+			}
+			.item-pai-num {
+
+			}
+			.item-stock-num {
+
+			}
+			.item-pai-over {
+				display: block;
+			}
+		}//end of info
+	}//end of status-later
+	.state-over {
+		.meta {
+			.item-discount {
+
+			}
+			.item-discount-soon {
+
+			}
+			.item-currentprice {
+				display: block;
+				color: #c10000;
+			}
+			.btn-pai {
+
+			}
+			.btn-buy {
+				display: block;
+			}
+			.item-text-later {
+
+			}
+		}//end of meta
+		.info {
+			.item-oprice {
+				display: block;
+			}
+			.item-remain-num {
+
+			}
+			.item-pai-num {
+				display: block;
+			}
+			.item-stock-num {
+
+			}
+			.item-pai-over {
+			}
+		}//end of info
+	}//end of status-over
+}//end of .round-goods-list
